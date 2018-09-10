@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_matrix"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView0"
+                style="@style/imagesMachine"
+                />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/imagesMachine"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/imagesMachine"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/imagesMachine"
+                 />
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/imagesMachine"
+                 />
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/imagesMachine"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                style="@style/imagesMachine"
+                 />
+            <ImageView
+                android:id="@+id/imageView7"
+                style="@style/imagesMachine"
+                 />
+            <ImageView
+                android:id="@+id/imageView8"
+                style="@style/imagesMachine"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : "
+        app:layout_constraintTop_toBottomOf="@id/tableLayout"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        android:textColor="#1826e7"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/textViewScoreTitle"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewScoreTitle"
+        android:layout_marginLeft="10dp"
+        android:textColor="#1826e7"
+        android:text="...."
+        android:textSize="50sp"
+        />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:background="?selectableItemBackgroundBorderless"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewValueAcquiredTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value acquired : "
+        app:layout_constraintTop_toBottomOf="@id/textViewScoreTitle"
+        app:layout_constraintLeft_toLeftOf="@id/textViewScoreTitle"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+         />
+
+    <TextView
+        android:id="@+id/textViewValueAcquiredResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="... "
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewValueAcquiredTitle"
+        app:layout_constraintLeft_toRightOf="@id/textViewValueAcquiredTitle"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/ColorA"
+        android:textSize="20sp"
+        />
+
+</android.support.constraint.ConstraintLayout>
